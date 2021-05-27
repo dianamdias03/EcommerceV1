@@ -46,17 +46,17 @@ public class OrderItemResource {
 	}
 	
 	@PostMapping("/orderItem")
-	public OrderItem saveOrder(@RequestBody OrderItem orderItem) {
+	public OrderItem saveOrderItem(@RequestBody OrderItem orderItem) {
 		return orderItemRepository.save(orderItem);
 	}
 	
 	@DeleteMapping("/orderItem")
-	public void deleteOrder(@RequestBody OrderItem orderItem) {
+	public void deleteOrderItem(@RequestBody OrderItem orderItem) {
 		orderItemRepository.delete(orderItem);
 	}
 	
 	@PutMapping("/orderItem")
-	public OrderItem updateOrder(@RequestBody OrderItem orderItem) {
+	public OrderItem updateOrderItem(@RequestBody OrderItem orderItem) {
 		return orderItemRepository.save(orderItem);
 	}
 	
